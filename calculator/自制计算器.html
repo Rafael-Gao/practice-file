@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="RafaelGao" content="2021.3.3">
+  <title>计算器</title>
+  <link rel="stylesheet" href="calculator.css" type="text/css" />
+</head>
+<body>
+  <main class = "calcuBox">
+    <header class="calcuTitle">计算器</header>
+      <address>MXT</address>
+        <div class="showCalcu">0</div>
+        <div class="showNum">0</div>
+          <div class="register">
+            <button class="registerKey" value="mClear" disabled>MC</button>
+            <button class="registerKey" value="mRemember" disabled>MR</button>
+            <button class="registerKey" value="mPlus">M+</button>
+            <button class="registerKey" value="mCut">M-</button>
+            <button class="registerKey" value="mS">MS</button>
+            <button class="registerKey" value="Mhistory" disabled>Mˇ</button>
+          </div>
+          <div class="calcuNum">
+            <button class="calcuNumKey" value="%">%</button>
+            <button class="calcuNumKey" value="CE">CE</button>
+            <button class="calcuNumKey" value="C">C</button>
+            <button class="calcuNumKey">←</button>
+            <button class="calcuNumKey" value="inverse"><sup>1</sup>/<sub>x</sub></button>
+            <button class="calcuNumKey" value="square">x<sup>2</button>
+            <button class="calcuNumKey" value="root"><sup>2</sup>√x</button>
+            <button class="calcuNumKey" value="/">÷</button>
+            <button class="calcuNumKey" value="7">7</button>
+            <button class="calcuNumKey" value="8">8</button>
+            <button class="calcuNumKey" value="9">9</button>
+            <button class="calcuNumKey" value="*">×</button>
+            <button class="calcuNumKey" value="4">4</button>
+            <button class="calcuNumKey" value="5">5</button>
+            <button class="calcuNumKey" value="6">6</button>
+            <button class="calcuNumKey" value="-">-</button>
+            <button class="calcuNumKey" value="1">1</button>
+            <button class="calcuNumKey" value="2">2</button>
+            <button class="calcuNumKey" value="3">3</button>
+            <button class="calcuNumKey" value="+">+</button>
+            <button class="calcuNumKey" value="negate"><sup>+</sup>/<sub>-</sub></button>
+            <button class="calcuNumKey" value="0">0</button>
+            <button class="calcuNumKey" value=".">.</button>
+            <button class="calcuNumKey" value ="=">=</button>
+          </div>
+  </main>
+</body>
+<script>
+  let showCalcus = document.getElementsByClassName("showCalcu");
+  let calcuNumKeys = document.getElementsByClassName("calcuNumKey");
+  let registerKeys = document.getElementsByClassName("registerKey");
+  function btnClick(obj){
+    showCalcus.replaceChild(this.value, 0);
+  }
+</script>
+</html>
